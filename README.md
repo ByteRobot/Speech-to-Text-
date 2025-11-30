@@ -74,5 +74,73 @@ ffmpeg -version
 If FFmpeg version information appears, the setup is complete.
 
 ---
+# 📦 2. Required Python Libraries
 
+Install the following dependencies to run the audio transcription script.
+
+---
+
+## **1. pydub**
+
+Handles audio loading, conversion, and chunking.
+
+```
+pip install pydub
+```
+
+> Requires FFmpeg to be installed and added to PATH (steps above).
+
+---
+
+## **2. SpeechRecognition**
+
+Used for converting speech to text via Google's speech API.
+
+```
+pip install SpeechRecognition
+```
+
+---
+
+## **3. (Optional) PyAudio**
+
+Only required if you plan to record audio from the microphone.
+Not needed for file-based audio transcription.
+
+```
+pip install pyaudio
+```
+
+If it fails on Windows:
+
+```
+pip install pipwin
+pipwin install pyaudio
+```
+
+---
+
+## **4. Built-In Python Libraries**
+
+These come with Python automatically:
+
+* `os`
+
+---
+
+# 🚀 Quick Install Command
+
+If you only need transcription from audio files:
+
+```
+pip install pydub SpeechRecognition
+```
+
+With microphone support:
+
+```
+pip install pydub SpeechRecognition pyaudio
+```
+
+---
 
